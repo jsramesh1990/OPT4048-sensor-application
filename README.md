@@ -2,14 +2,12 @@
 
 This project simulates the TI OPT4048 4‑channel ambient light sensor using a dummy input generator and a user-space application. The project also includes your **original `opt4048_reader.c` (unchanged)** so the structure remains realistic for future hardware integration.
 
----
 
 # Project Structure
 
-```
 project/
 │
-├── opt4048_reader.c        # Your original I2C sensor reader (unchanged)
+├── opt4048_reader.c        # Your original I2C sensor reader 
 ├── input_generator.c        # Generates dummy 4‑channel sensor_input.txt
 ├── sensor_app.c             # Reads the 4 values and displays them
 ├── Makefile
@@ -21,10 +19,10 @@ project/
 
 The real OPT4048 uses I²C to read CH0–CH3:
 
-* **CH0 – IR Full Range**
-* **CH1 – Visible Broadband**
-* **CH2 – Blue/Green**
-* **CH3 – Red/NIR**
+* CH0 – IR Full Range
+* CH1 – Visible Broadband
+* CH2 – Blue/Green
+* CH3 – Red/NIR
 
 Because the real hardware requires permissions, this project simulates sensor data through a text file (`sensor_input.txt`).
 
