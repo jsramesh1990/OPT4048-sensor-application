@@ -4,7 +4,7 @@ This project simulates the TI OPT4048 4‑channel ambient light sensor using a d
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 ```
 project/
@@ -14,11 +14,10 @@ project/
 ├── sensor_app.c             # Reads the 4 values and displays them
 ├── Makefile
 └── README.md                # (this file)
-```
 
----
 
-# 🚀 Overview
+
+# Overview
 
 The real OPT4048 uses I²C to read CH0–CH3:
 
@@ -38,7 +37,7 @@ The workflow:
 
 ---
 
-# 🛠 Step-by-Step Execution
+# Step-by-Step Execution
 
 ## 1️⃣ Build the project
 
@@ -75,7 +74,7 @@ CH0(IR): 53211 | CH1(Visible): 88344 | CH2(Blue/Green): 12922 | CH3(Red/NIR): 99
 
 ---
 
-# 📘 File Descriptions
+#  File Descriptions
 
 ## ✔ input_generator.c
 
@@ -89,7 +88,7 @@ CH0,CH1,CH2,CH3
 
 ---
 
-## ✔ sensor_app.c
+##  sensor_app.c
 
 * Reads `sensor_input.txt`
 * Parses 4 integers
@@ -97,7 +96,7 @@ CH0,CH1,CH2,CH3
 
 ---
 
-## ✔ opt4048_reader.c
+##  opt4048_reader.c
 
 * Your **original code**, unchanged
 * Opens `/dev/i2c-4`
@@ -108,7 +107,7 @@ This file is preserved for actual hardware usage later.
 
 ---
 
-## ✔ Makefile
+##   Makefile
 
 Targets:
 
@@ -118,14 +117,14 @@ Targets:
 
 ---
 
-# 📌 Notes
+#   Notes
 
 * No root access is required since simulation uses text files.
 * `opt4048_reader.c` will fail without proper I²C permissions but is kept intentionally for hardware use.
 
 ---
 
-# 📦 Future Expansion Ideas
+#   Future Expansion Ideas
 
 If you want, I can add:
 
@@ -136,7 +135,7 @@ If you want, I can add:
 
 ---
 
-# ✔ Completed
+#  Completed
 
 This README documents:
 
