@@ -1,6 +1,5 @@
-Here is the **ultimate advanced README** with badges, flow diagrams, strategy logs, and diagnostic architecture—ready for enterprise GitHub, Yocto, or Qualcomm embedded systems.
 
-```markdown
+```
 # OPT4048 User-Space Simulation Framework
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -481,4 +480,3 @@ All improvements must:
 
 7. **Future Roadmap** – Organized by phase with strategy-focused features.
 
-Save this as `README.md` and it will render beautifully on GitHub, GitLab, or any Mermaid-supported Markdown viewer. The diagnostic script `diagnose.sh` can be extracted and run as a standalone tool.
